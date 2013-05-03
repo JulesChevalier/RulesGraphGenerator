@@ -1,5 +1,10 @@
 import java.util.HashMap;
-
+/**
+ * Defines all the codes of all concepts and rules
+ * Defines maps for code/name of concepts and rules
+ *
+ * @author Jules Chevalier
+ */
 public class RulesList {
 
 	/**************************************/
@@ -55,64 +60,64 @@ public class RulesList {
 	public final static int RDF_REST                      = 47;
 	public final static int RDF_TYPE                      = 48;
 	public final static int RDF_TYPEPROPERTY              = 49;
-	
-	
+
+
 
 	/**************************************/
 	/*        MAP FOR CONCEPTS NAMES      */
 	/**************************************/
 	public static HashMap<Integer,String> conceptsNames = new HashMap<Integer,String>();
 	static{
-		conceptsNames.put(0,"UNIVERSAL");
-		conceptsNames.put(1,"OWL:ALLDIFFERENT");
-		conceptsNames.put(2,"OWL:ALLDISJOINTCLASSES");
-		conceptsNames.put(3,"OWL:ALLDISJOINTPROPERTIES");
-		conceptsNames.put(4,"OWL:ALLVALUESFROM");
-		conceptsNames.put(5,"OWL:ANNOTATIONPROPERTY");
-		conceptsNames.put(6,"OWL:ASSERTIONPROPERTY");
-		conceptsNames.put(7,"OWL:ASYMETRICPROPERTY");
-		conceptsNames.put(8,"OWL:CLASS");
-		conceptsNames.put(9,"OWL:COMPLEMENTOF");
-		conceptsNames.put(10,"OWL:DIFFERENTFROM");
-		conceptsNames.put(11,"OWL:DISJOINTWITH");
-		conceptsNames.put(12,"OWL:DISTINCTMEMBERS");
-		conceptsNames.put(13,"OWL:EQUIVALENTCLASS");
-		conceptsNames.put(14,"OWL:EQUIVALENTPROPERTY");
-		conceptsNames.put(15,"OWL:FUNCTIONALPROPERTY");
-		conceptsNames.put(16,"OWL:HASKEY");
-		conceptsNames.put(17,"OWL:HASVALUE");
-		conceptsNames.put(18,"OWL:INTERSECTIONOF");
-		conceptsNames.put(19,"OWL:INVERSEFUNCTIONALPROPERTY");
-		conceptsNames.put(20,"OWL:INVERSEOF");
-		conceptsNames.put(21,"OWL:IRREFLEXIVEPROPERTY");
-		conceptsNames.put(22,"OWL:MAXCARDINALITY");
-		conceptsNames.put(23,"OWL:MAXQUALIFIEDCARDINALITY");
-		conceptsNames.put(24,"OWL:MEMBERS");
-		conceptsNames.put(25,"OWL:NOTHING");
-		conceptsNames.put(26,"OWL:OBJECTPROPERTY");
-		conceptsNames.put(27,"OWL:ONCLASS");
-		conceptsNames.put(28,"OWL:ONEOF");
-		conceptsNames.put(29,"OWL:ONPROPERTY");
-		conceptsNames.put(30,"OWL:PROPERTYCHAINAXIOM");
-		conceptsNames.put(31,"OWL:PROPERTYDISJOINTWITH");
-		conceptsNames.put(32,"OWL:SAMEAS");
-		conceptsNames.put(33,"OWL:SOMEVALUESFROM");
-		conceptsNames.put(34,"OWL:SOURCEINDIVIDUAL");
-		conceptsNames.put(35,"OWL:SYMETRICPROPERTY");
-		conceptsNames.put(36,"OWL:TARGETINDIVIDUAL");
-		conceptsNames.put(37,"OWL:TARGETVALUE");
-		conceptsNames.put(38,"OWL:THING");
-		conceptsNames.put(39,"OWL:TRANSITIVEPROPERTY");
-		conceptsNames.put(40,"OWL:UNIONOF");
-		conceptsNames.put(41,"RDFS:DOMAIN");
-		conceptsNames.put(42,"RDFS:RANGE");
-		conceptsNames.put(43,"RDFS:SUBCLASSOF");
-		conceptsNames.put(44,"RDFS:SUBPROPERTYOF");
-		conceptsNames.put(45,"RDF:DATATYPEPROPERTY");
-		conceptsNames.put(46,"RDF:FIRST");
-		conceptsNames.put(47,"RDF:REST");
-		conceptsNames.put(48,"RDF:TYPE");
-		conceptsNames.put(49,"RDF:TYPEPROPERTY");
+		conceptsNames.put(UNIVERSAL,"UNIVERSAL");
+		conceptsNames.put(OWL_ALLDIFFERENT,"OWL_ALLDIFFERENT");
+		conceptsNames.put(OWL_ALLDISJOINTCLASSES,"OWL_ALLDISJOINTCLASSES");
+		conceptsNames.put(OWL_ALLDISJOINTPROPERTIES,"OWL_ALLDISJOINTPROPERTIES");
+		conceptsNames.put(OWL_ALLVALUESFROM,"OWL_ALLVALUESFROM");
+		conceptsNames.put(OWL_ANNOTATIONPROPERTY,"OWL_ANNOTATIONPROPERTY");
+		conceptsNames.put(OWL_ASSERTIONPROPERTY,"OWL_ASSERTIONPROPERTY");
+		conceptsNames.put(OWL_ASYMETRICPROPERTY,"OWL_ASYMETRICPROPERTY");
+		conceptsNames.put(OWL_CLASS,"OWL_CLASS");
+		conceptsNames.put(OWL_COMPLEMENTOF,"OWL_COMPLEMENTOF");
+		conceptsNames.put(OWL_DIFFERENTFROM,"OWL_DIFFERENTFROM");
+		conceptsNames.put(OWL_DISJOINTWITH,"OWL_DISJOINTWITH");
+		conceptsNames.put(OWL_DISTINCTMEMBERS,"OWL_DISTINCTMEMBERS");
+		conceptsNames.put(OWL_EQUIVALENTCLASS,"OWL_EQUIVALENTCLASS");
+		conceptsNames.put(OWL_EQUIVALENTPROPERTY,"OWL_EQUIVALENTPROPERTY");
+		conceptsNames.put(OWL_FUNCTIONALPROPERTY,"OWL_FUNCTIONALPROPERTY");
+		conceptsNames.put(OWL_HASKEY,"OWL_HASKEY");
+		conceptsNames.put(OWL_HASVALUE,"OWL_HASVALUE");
+		conceptsNames.put(OWL_INTERSECTIONOF,"OWL_INTERSECTIONOF");
+		conceptsNames.put(OWL_INVERSEFUNCTIONALPROPERTY,"OWL_INVERSEFUNCTIONALPROPERTY");
+		conceptsNames.put(OWL_INVERSEOF,"OWL_INVERSEOF");
+		conceptsNames.put(OWL_IRREFLEXIVEPROPERTY,"OWL_IRREFLEXIVEPROPERTY");
+		conceptsNames.put(OWL_MAXCARDINALITY,"OWL_MAXCARDINALITY");
+		conceptsNames.put(OWL_MAXQUALIFIEDCARDINALITY,"OWL_MAXQUALIFIEDCARDINALITY");
+		conceptsNames.put(OWL_MEMBERS,"OWL_MEMBERS");
+		conceptsNames.put(OWL_NOTHING,"OWL_NOTHING");
+		conceptsNames.put(OWL_OBJECTPROPERTY,"OWL_OBJECTPROPERTY");
+		conceptsNames.put(OWL_ONCLASS,"OWL_ONCLASS");
+		conceptsNames.put(OWL_ONEOF,"OWL_ONEOF");
+		conceptsNames.put(OWL_ONPROPERTY,"OWL_ONPROPERTY");
+		conceptsNames.put(OWL_PROPERTYCHAINAXIOM,"OWL_PROPERTYCHAINAXIOM");
+		conceptsNames.put(OWL_PROPERTYDISJOINTWITH,"OWL_PROPERTYDISJOINTWITH");
+		conceptsNames.put(OWL_SAMEAS,"OWL_SAMEAS");
+		conceptsNames.put(OWL_SOMEVALUESFROM,"OWL_SOMEVALUESFROM");
+		conceptsNames.put(OWL_SOURCEINDIVIDUAL,"OWL_SOURCEINDIVIDUAL");
+		conceptsNames.put(OWL_SYMETRICPROPERTY,"OWL_SYMETRICPROPERTY");
+		conceptsNames.put(OWL_TARGETINDIVIDUAL,"OWL_TARGETINDIVIDUAL");
+		conceptsNames.put(OWL_TARGETVALUE,"OWL_TARGETVALUE");
+		conceptsNames.put(OWL_THING,"OWL_THING");
+		conceptsNames.put(OWL_TRANSITIVEPROPERTY,"OWL_TRANSITIVEPROPERTY");
+		conceptsNames.put(OWL_UNIONOF,"OWL_UNIONOF");
+		conceptsNames.put(RDFS_DOMAIN,"RDFS_DOMAIN");
+		conceptsNames.put(RDFS_RANGE,"RDFS_RANGE");
+		conceptsNames.put(RDFS_SUBCLASSOF,"RDFS_SUBCLASSOF");
+		conceptsNames.put(RDFS_SUBPROPERTYOF,"RDFS_SUBPROPERTYOF");
+		conceptsNames.put(RDF_DATATYPEPROPERTY,"RDF_DATATYPEPROPERTY");
+		conceptsNames.put(RDF_FIRST,"RDF_FIRST");
+		conceptsNames.put(RDF_REST,"RDF_REST");
+		conceptsNames.put(RDF_TYPE,"RDF_TYPE");
+		conceptsNames.put(RDF_TYPEPROPERTY,"RDF_TYPEPROPERTY");
 	}
 
 
@@ -123,7 +128,7 @@ public class RulesList {
 		RDF_TYPE,
 		RDF_TYPEPROPERTY
 	};
-	
+
 	public static int[] RDFS={
 		RDFS_DOMAIN,
 		RDFS_RANGE,
@@ -135,7 +140,64 @@ public class RulesList {
 		RDF_DATATYPEPROPERTY,
 		RDF_TYPEPROPERTY
 	};
-	
+
+	public static int[] RHODF={
+		RDFS_DOMAIN,
+		RDFS_RANGE,
+		RDFS_SUBCLASSOF,
+		RDFS_SUBPROPERTYOF,
+		RDF_TYPE
+	};
+
+	public static int[] OWL_HORST={
+		OWL_ALLVALUESFROM,
+		OWL_CLASS,
+		OWL_DIFFERENTFROM,
+		OWL_DISJOINTWITH,
+		OWL_EQUIVALENTCLASS,
+		OWL_EQUIVALENTPROPERTY,
+		OWL_FUNCTIONALPROPERTY,
+		OWL_HASVALUE,
+		OWL_INVERSEFUNCTIONALPROPERTY,
+		OWL_INVERSEOF,
+		OWL_ONPROPERTY,
+		OWL_SAMEAS,
+		OWL_SOMEVALUESFROM,
+		OWL_SYMETRICPROPERTY,
+		OWL_EQUIVALENTCLASS,
+		OWL_EQUIVALENTPROPERTY,
+		RDFS_SUBCLASSOF,
+		RDFS_SUBPROPERTYOF,
+		RDF_TYPE		
+	};
+
+	public static int[] OWL_LITE={
+		OWL_CLASS,
+		OWL_THING,
+		OWL_NOTHING,
+		OWL_EQUIVALENTCLASS,
+		OWL_EQUIVALENTPROPERTY,
+		OWL_SAMEAS,
+		OWL_DIFFERENTFROM,
+		OWL_ALLDIFFERENT,
+		OWL_DISTINCTMEMBERS,
+		OWL_INVERSEOF,
+		OWL_TRANSITIVEPROPERTY,
+		OWL_SYMETRICPROPERTY,
+		OWL_FUNCTIONALPROPERTY,
+		OWL_INVERSEFUNCTIONALPROPERTY,
+		OWL_ONPROPERTY,
+		OWL_ALLVALUESFROM,
+		OWL_SOMEVALUESFROM,
+		OWL_MAXCARDINALITY,
+		OWL_INTERSECTIONOF,
+		OWL_ANNOTATIONPROPERTY,
+		RDFS_DOMAIN,
+		RDFS_RANGE,
+		RDFS_SUBCLASSOF,
+		RDFS_SUBPROPERTYOF		
+	};
+
 	public static int[] OWL_FULL={OWL_ALLDIFFERENT,
 		OWL_ALLDISJOINTCLASSES,
 		OWL_ALLDISJOINTPROPERTIES,
@@ -187,55 +249,7 @@ public class RulesList {
 		RDF_TYPEPROPERTY
 	};
 
-	public static int[] OWL_HORST={
-		OWL_ALLVALUESFROM,
-		OWL_CLASS,
-		OWL_DIFFERENTFROM,
-		OWL_DISJOINTWITH,
-		OWL_EQUIVALENTCLASS,
-		OWL_EQUIVALENTPROPERTY,
-		OWL_FUNCTIONALPROPERTY,
-		OWL_HASVALUE,
-		OWL_INVERSEFUNCTIONALPROPERTY,
-		OWL_INVERSEOF,
-		OWL_ONPROPERTY,
-		OWL_SAMEAS,
-		OWL_SOMEVALUESFROM,
-		OWL_SYMETRICPROPERTY,
-		OWL_EQUIVALENTCLASS,
-		OWL_EQUIVALENTPROPERTY,
-		RDFS_SUBCLASSOF,
-		RDFS_SUBPROPERTYOF,
-		RDF_TYPE		
-	};
 
-	public static int[] OWL_LITE={
-		OWL_CLASS,
-		OWL_THING,
-		OWL_NOTHING,
-		OWL_EQUIVALENTCLASS,
-		OWL_EQUIVALENTPROPERTY,
-		OWL_SAMEAS,
-		OWL_DIFFERENTFROM,
-		OWL_ALLDIFFERENT,
-		OWL_DISTINCTMEMBERS,
-		OWL_INVERSEOF,
-		OWL_TRANSITIVEPROPERTY,
-		OWL_SYMETRICPROPERTY,
-		OWL_FUNCTIONALPROPERTY,
-		OWL_INVERSEFUNCTIONALPROPERTY,
-		OWL_ONPROPERTY,
-		OWL_ALLVALUESFROM,
-		OWL_SOMEVALUESFROM,
-		OWL_MAXCARDINALITY,
-		OWL_INTERSECTIONOF,
-		OWL_ANNOTATIONPROPERTY,
-		RDFS_DOMAIN,
-		RDFS_RANGE,
-		RDFS_SUBCLASSOF,
-		RDFS_SUBPROPERTYOF		
-	};
-	
 	/**************************************/
 	/*      RULES USED FOR INFERENCE      */
 	/**************************************/
@@ -256,12 +270,12 @@ public class RulesList {
 	public final static int CLS_MAXQC2 = 15;
 	public final static int CLS_MAXQC3 = 16;
 	public final static int CLS_MAXQC4 = 17;
-	//public final static int CLS_NOTHING1 = 18;
+	public final static int CLS_NOTHING1 = 18;
 	public final static int CLS_NOTHING2 = 19;
 	public final static int CLS_OO = 20;
 	public final static int CLS_SVF1 = 21;
 	public final static int CLS_SVF2 = 22;
-	//public final static int CLS_THING = 23;
+	public final static int CLS_THING = 23;
 	public final static int CLS_UNI = 24;
 	public final static int EQ_DIFF1 = 25;
 	public final static int EQ_DIFF2 = 26;
@@ -319,79 +333,79 @@ public class RulesList {
 	/**************************************/
 	public static HashMap<Integer,String> rulesNames = new HashMap<Integer,String>();
 	static{
-		rulesNames.put(1,"CAX_ADC");
-		rulesNames.put(2,"CAX_DW");
-		rulesNames.put(3,"CAX_EQC1");
-		rulesNames.put(4,"CAX_EQC2");
-		rulesNames.put(5,"CAX_SCO");
-		rulesNames.put(6,"CLS_AVF");
-		rulesNames.put(7,"CLS_COM");
-		rulesNames.put(8,"CLS_HV1");
-		rulesNames.put(9,"CLS_HV2");
-		rulesNames.put(10,"CLS_INT1");
-		rulesNames.put(11,"CLS_INT2");
-		rulesNames.put(12,"CLS_MAXC1");
-		rulesNames.put(13,"CLS_MAXC2");
-		rulesNames.put(14,"CLS_MAXQC1");
-		rulesNames.put(15,"CLS_MAXQC2");
-		rulesNames.put(16,"CLS_MAXQC3");
-		rulesNames.put(17,"CLS_MAXQC4");
-		rulesNames.put(18,"CLS_NOTHING1");
-		rulesNames.put(19,"CLS_NOTHING2");
-		rulesNames.put(20,"CLS_OO");
-		rulesNames.put(21,"CLS_SVF1");
-		rulesNames.put(22,"CLS_SVF2");
-		rulesNames.put(23,"CLS_THING");
-		rulesNames.put(24,"CLS_UNI");
-		rulesNames.put(25,"EQ_DIFF1");
-		rulesNames.put(26,"EQ_DIFF2");
-		rulesNames.put(27,"EQ_DIFF3");
-		rulesNames.put(28,"EQ_REP_O");
-		rulesNames.put(29,"EQ_REP_P");
-		rulesNames.put(30,"EQ_REP_S");
-		rulesNames.put(31,"EQ_REF");
-		rulesNames.put(32,"EQ_SYM");
-		rulesNames.put(33,"EQ_TRANS");
-		rulesNames.put(34,"PRP_ADP");
-		rulesNames.put(35,"PRP_AP");
-		rulesNames.put(36,"PRP_ASYP");
-		rulesNames.put(37,"PRP_DOM");
-		rulesNames.put(38,"PRP_EQP1");
-		rulesNames.put(39,"PRP_EQP2");
-		rulesNames.put(40,"PRP_FP");
-		rulesNames.put(41,"PRP_IFP");
-		rulesNames.put(42,"PRP_INV1");
-		rulesNames.put(43,"PRP_INV2");
-		rulesNames.put(44,"PRP_IRP");
-		rulesNames.put(45,"PRP_KEY");
-		rulesNames.put(46,"PRP_NPA1");
-		rulesNames.put(47,"PRP_NPA2");
-		rulesNames.put(48,"PRP_PDW");
-		rulesNames.put(49,"PRP_RNG");
-		rulesNames.put(50,"PRP_SPO1");
-		rulesNames.put(51,"PRP_SPO2");
-		rulesNames.put(52,"PRP_SYMP");
-		rulesNames.put(53,"PRP_TRP");
-		rulesNames.put(54,"SCM_AVF1");
-		rulesNames.put(55,"SCM_AVF2");
-		rulesNames.put(56,"SCM_CLS");
-		rulesNames.put(57,"SCM_DOM1");
-		rulesNames.put(58,"SCM_DOM2");
-		rulesNames.put(59,"SCM_DP");
-		rulesNames.put(60,"SCM_EQC1");
-		rulesNames.put(61,"SCM_EQC2");
-		rulesNames.put(62,"SCM_EQP1");
-		rulesNames.put(63,"SCM_EQP2");
-		rulesNames.put(64,"SCM_HV");
-		rulesNames.put(65,"SCM_INT");
-		rulesNames.put(66,"SCM_OP");
-		rulesNames.put(67,"SCM_RNG1");
-		rulesNames.put(68,"SCM_RNG2");
-		rulesNames.put(69,"SCM_SCO");
-		rulesNames.put(70,"SCM_SPO");
-		rulesNames.put(71,"SCM_SVF1");
-		rulesNames.put(72,"SCM_SVF2");
-		rulesNames.put(73,"SCM_UNI");
+		rulesNames.put(CAX_ADC,"CAX_ADC");
+		rulesNames.put(CAX_DW,"CAX_DW");
+		rulesNames.put(CAX_EQC1,"CAX_EQC1");
+		rulesNames.put(CAX_EQC2,"CAX_EQC2");
+		rulesNames.put(CAX_SCO,"CAX_SCO");
+		rulesNames.put(CLS_AVF,"CLS_AVF");
+		rulesNames.put(CLS_COM,"CLS_COM");
+		rulesNames.put(CLS_HV1,"CLS_HV1");
+		rulesNames.put(CLS_HV2,"CLS_HV2");
+		rulesNames.put(CLS_INT1,"CLS_INT1");
+		rulesNames.put(CLS_INT2,"CLS_INT2");
+		rulesNames.put(CLS_MAXC1,"CLS_MAXC1");
+		rulesNames.put(CLS_MAXC2,"CLS_MAXC2");
+		rulesNames.put(CLS_MAXQC1,"CLS_MAXQC1");
+		rulesNames.put(CLS_MAXQC2,"CLS_MAXQC2");
+		rulesNames.put(CLS_MAXQC3,"CLS_MAXQC3");
+		rulesNames.put(CLS_MAXQC4,"CLS_MAXQC4");
+		rulesNames.put(CLS_NOTHING1,"CLS_NOTHING1");
+		rulesNames.put(CLS_NOTHING2,"CLS_NOTHING2");
+		rulesNames.put(CLS_OO,"CLS_OO");
+		rulesNames.put(CLS_SVF1,"CLS_SVF1");
+		rulesNames.put(CLS_SVF2,"CLS_SVF2");
+		rulesNames.put(CLS_THING,"CLS_THING");
+		rulesNames.put(CLS_UNI,"CLS_UNI");
+		rulesNames.put(EQ_DIFF1,"EQ_DIFF1");
+		rulesNames.put(EQ_DIFF2,"EQ_DIFF2");
+		rulesNames.put(EQ_DIFF3,"EQ_DIFF3");
+		rulesNames.put(EQ_REP_O,"EQ_REP_O");
+		rulesNames.put(EQ_REP_P,"EQ_REP_P");
+		rulesNames.put(EQ_REP_S,"EQ_REP_S");
+		rulesNames.put(EQ_REF,"EQ_REF");
+		rulesNames.put(EQ_SYM,"EQ_SYM");
+		rulesNames.put(EQ_TRANS,"EQ_TRANS");
+		rulesNames.put(PRP_ADP,"PRP_ADP");
+		rulesNames.put(PRP_AP,"PRP_AP");
+		rulesNames.put(PRP_ASYP,"PRP_ASYP");
+		rulesNames.put(PRP_DOM,"PRP_DOM");
+		rulesNames.put(PRP_EQP1,"PRP_EQP1");
+		rulesNames.put(PRP_EQP2,"PRP_EQP2");
+		rulesNames.put(PRP_FP,"PRP_FP");
+		rulesNames.put(PRP_IFP,"PRP_IFP");
+		rulesNames.put(PRP_INV1,"PRP_INV1");
+		rulesNames.put(PRP_INV2,"PRP_INV2");
+		rulesNames.put(PRP_IRP,"PRP_IRP");
+		rulesNames.put(PRP_KEY,"PRP_KEY");
+		rulesNames.put(PRP_NPA1,"PRP_NPA1");
+		rulesNames.put(PRP_NPA2,"PRP_NPA2");
+		rulesNames.put(PRP_PDW,"PRP_PDW");
+		rulesNames.put(PRP_RNG,"PRP_RNG");
+		rulesNames.put(PRP_SPO1,"PRP_SPO1");
+		rulesNames.put(PRP_SPO2,"PRP_SPO2");
+		rulesNames.put(PRP_SYMP,"PRP_SYMP");
+		rulesNames.put(PRP_TRP,"PRP_TRP");
+		rulesNames.put(SCM_AVF1,"SCM_AVF1");
+		rulesNames.put(SCM_AVF2,"SCM_AVF2");
+		rulesNames.put(SCM_CLS,"SCM_CLS");
+		rulesNames.put(SCM_DOM1,"SCM_DOM1");
+		rulesNames.put(SCM_DOM2,"SCM_DOM2");
+		rulesNames.put(SCM_DP,"SCM_DP");
+		rulesNames.put(SCM_EQC1,"SCM_EQC1");
+		rulesNames.put(SCM_EQC2,"SCM_EQC2");
+		rulesNames.put(SCM_EQP1,"SCM_EQP1");
+		rulesNames.put(SCM_EQP2,"SCM_EQP2");
+		rulesNames.put(SCM_HV,"SCM_HV");
+		rulesNames.put(SCM_INT,"SCM_INT");
+		rulesNames.put(SCM_OP,"SCM_OP");
+		rulesNames.put(SCM_RNG1,"SCM_RNG1");
+		rulesNames.put(SCM_RNG2,"SCM_RNG2");
+		rulesNames.put(SCM_SCO,"SCM_SCO");
+		rulesNames.put(SCM_SPO,"SCM_SPO");
+		rulesNames.put(SCM_SVF1,"SCM_SVF1");
+		rulesNames.put(SCM_SVF2,"SCM_SVF2");
+		rulesNames.put(SCM_UNI,"SCM_UNI");
 	}
 
 

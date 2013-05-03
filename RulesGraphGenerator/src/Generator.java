@@ -1,34 +1,18 @@
-import java.io.File;
 import java.util.ArrayList;
 
-
+/**
+ * Contains static methods to generate the graph
+ *
+ * @author Jules Chevalier
+ **/
 public class Generator {
-
-	public static void main(String[] args) {
-
-		System.out.print("Filtring inference rules...");
-		ArrayList<Rule> filtredRulesList = filtredRulesList(RulesList.RDFS); 
-		System.out.println(" ok");
-		printRulesList(filtredRulesList);
-		
-
-		File out = new File("graph.pdf");
-		System.out.print("Graph construction...");
-		GraphViz graph = generateGraph(filtredRulesList, false);
-		System.out.println(" ok");
-		System.out.print("PDF generation...");
-		graph.writeGraphToFile( graph.getGraph( graph.getDotSource(), "pdf" ), out );
-		System.out.println(" ok");
-	}
 	
-	public static void printRulesList(ArrayList<Rule> rulesList){
-		System.out.println("\n	Rules list");
-		System.out.println();
-		for (Rule rule : rulesList) {
-			System.out.println(rule);
-		}
-	}
 	
+	/**
+	 * @param rulesList List of rules used for inference
+	 * @param acceptUnivseral True if universal match are accepted, False else
+	 * @return the rules graph within the Graphiz format
+	 */
 	public static GraphViz generateGraph(ArrayList<Rule> rulesList, boolean acceptUnivseral){
 
 		GraphViz graph = new GraphViz();
@@ -39,7 +23,6 @@ public class Generator {
 			for (Rule rule2 : rulesList) {
 				if(rule1.matchWIth(rule2, acceptUnivseral)){
 					graph.addln("\""+RulesList.rulesNames.get(rule1.getCode())+"\" -> \""+RulesList.rulesNames.get(rule2.getCode())+"\"");
-					//System.out.println("\""+RulesList.rulesNames.get(rule1.getCode())+"\" -> \""+RulesList.rulesNames.get(rule2.getCode())+"\"");
 				}
 			}
 		}
@@ -47,6 +30,10 @@ public class Generator {
 		return graph;
 	}
 	
+	/**
+	 * @param concepts List of concepts' codes
+	 * @return List of rules applicable with this concepts
+	 */
 	public static ArrayList<Rule> filtredRulesList(int[] concepts){
 		ArrayList<Rule> filtredRulesList = new ArrayList<Rule>();
 		for (Rule rule : inferenceRules()) {
@@ -56,6 +43,9 @@ public class Generator {
 		return filtredRulesList;
 	}
 
+	/**
+	 * @return The list of all inference rules
+	 */
 	public static ArrayList<Rule> inferenceRules(){
 		ArrayList<Rule> rulesList = new ArrayList<Rule>();
 
