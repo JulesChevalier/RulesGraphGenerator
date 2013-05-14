@@ -297,6 +297,7 @@ public class JGenerator extends javax.swing.JFrame {
 		}
 		/*Print the list on the GUI*/
 		this.usedRules.setText(list);
+		this.rulesLabel.setText("Used rules("+rules.size()+")");
 	}
 
 	/**

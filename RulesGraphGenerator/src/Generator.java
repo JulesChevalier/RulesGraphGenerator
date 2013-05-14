@@ -16,16 +16,24 @@ public class Generator {
 	public static GraphViz generateGraph(ArrayList<Rule> rulesList, boolean acceptUnivseral){
 
 		GraphViz graph = new GraphViz();
+		int edges = 0;
 		
+		// Initialise the graph
 		graph.addln(graph.start_graph());
 		
+		// For each rule, if any other rul match, add an edge between these rules
 		for (Rule rule1 : rulesList) {
 			for (Rule rule2 : rulesList) {
 				if(rule1.matchWIth(rule2, acceptUnivseral)){
+					edges++;
 					graph.addln("\""+RulesList.rulesNames.get(rule1.getCode())+"\" -> \""+RulesList.rulesNames.get(rule2.getCode())+"\"");
 				}
 			}
 		}
+		
+		// Name the graph		
+		graph.addln("labelloc=\"b\"");
+		graph.addln("label=\""+rulesList.size()+" Rules, "+edges+" Edges"+"\";");
 		
 		return graph;
 	}
