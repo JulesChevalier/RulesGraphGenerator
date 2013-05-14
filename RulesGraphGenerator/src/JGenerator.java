@@ -383,7 +383,7 @@ public class JGenerator extends javax.swing.JFrame {
 		GraphViz graph = Generator.generateGraph(rules, this.universalCheckBox.isSelected());
 		/*Write the graph in a temporary file and open it*/
 		try {
-			File outGraphFile = File.createTempFile("JGenerator_graph", ".pdf");
+			File outGraphFile = File.createTempFile("JGenerator_graph", "."+(String)this.outputFormat.getSelectedItem());
 			System.out.println("Write graph in "+outGraphFile.getAbsolutePath());
 			graph.writeGraphToFile( graph.getGraph( graph.getDotSource(), (String)this.outputFormat.getSelectedItem() ), outGraphFile.getAbsolutePath() );
 		    Desktop.getDesktop().open(outGraphFile);
